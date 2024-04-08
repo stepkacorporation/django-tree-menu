@@ -1,0 +1,186 @@
+[
+{
+    "model": "menu.menu",
+    "pk": 1,
+    "fields": {
+        "title": "main_menu"
+    }
+},
+{
+    "model": "menu.menu",
+    "pk": 2,
+    "fields": {
+        "title": "sub_menu"
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 1,
+    "fields": {
+        "title": "Информационные технологии",
+        "slug": "informacionnye-tehnologii",
+        "menu": 1,
+        "parent": null
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 2,
+    "fields": {
+        "title": "Языки программирования",
+        "slug": "yazyki-programmirovaniya",
+        "menu": 1,
+        "parent": 1
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 3,
+    "fields": {
+        "title": "Python",
+        "slug": "python",
+        "menu": 1,
+        "parent": 2
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 4,
+    "fields": {
+        "title": "Java",
+        "slug": "java",
+        "menu": 1,
+        "parent": 2
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 5,
+    "fields": {
+        "title": "C/C++",
+        "slug": "c-c-plus-plus",
+        "menu": 1,
+        "parent": 2
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 6,
+    "fields": {
+        "title": "Иностранные языки",
+        "slug": "inostrannye-yazyki",
+        "menu": 1,
+        "parent": null
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 7,
+    "fields": {
+        "title": "Английский язык",
+        "slug": "anglijskij-yazyk",
+        "menu": 1,
+        "parent": 6
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 8,
+    "fields": {
+        "title": "Китайский язык",
+        "slug": "kitajskij-yazyk",
+        "menu": 1,
+        "parent": 6
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 9,
+    "fields": {
+        "title": "Фреймворки и библиотеки",
+        "slug": "frejmvorki-i-biblioteki",
+        "menu": 1,
+        "parent": 1
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 10,
+    "fields": {
+        "title": "Django",
+        "slug": "django",
+        "menu": 1,
+        "parent": 9
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 11,
+    "fields": {
+        "title": "React",
+        "slug": "react",
+        "menu": 1,
+        "parent": 9
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 12,
+    "fields": {
+        "title": "Node.js",
+        "slug": "nodejs",
+        "menu": 1,
+        "parent": 9
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 13,
+    "fields": {
+        "title": "Учебные и академические дисциплины",
+        "slug": "uchebnye-i-akademicheskie-discipliny",
+        "menu": 2,
+        "parent": null
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 14,
+    "fields": {
+        "title": "Математика",
+        "slug": "matematika",
+        "menu": 2,
+        "parent": 13
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 15,
+    "fields": {
+        "title": "Русский язык",
+        "slug": "russkij-yazyk",
+        "menu": 2,
+        "parent": 13
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 16,
+    "fields": {
+        "title": "Теория вероятностей и статистика",
+        "slug": "teoriya-veroyatnostej-i-statistika",
+        "menu": 2,
+        "parent": 14
+    }
+},
+{
+    "model": "menu.item",
+    "pk": 17,
+    "fields": {
+        "title": "Алгебра и теория чисел",
+        "slug": "algebra-i-teoriya-chisel",
+        "menu": 2,
+        "parent": 14
+    }
+}
+]

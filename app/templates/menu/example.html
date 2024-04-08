@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% load menu_tags %}
+
+{% block title %}Пример меню{% endblock title%}
+
+{% block content %}
+    <p>Меню 1<p/>
+    {% draw_menu 'main_menu' %}
+    <p>Меню 2</p>
+    {% draw_menu 'sub_menu' %}
+
+{% endblock content %}
