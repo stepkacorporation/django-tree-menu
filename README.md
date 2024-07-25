@@ -1,59 +1,46 @@
-# django-tree-menu
+# django-tree-menu (Test Task)
 
-### Описание
+## Описание
+
 Это Django приложение, представляющее собой систему управления меню. Оно позволяет создавать и управлять многоуровневыми меню для веб-сайта через админ-панель Django.
 
-### Установка
-#### Для Windows
-```
-git clone https://github.com/stepkacorporation/django-tree-menu.git
+## Установка
+
+1. Клонируйте репозиторий:
+
+```bash
+git clone https://github.com/stepkacorporation django-tree-menu.git
 cd django-tree-menu
-python -m venv venv
-venv/Scripts/activate
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-cd app
-python manage.py migrate
-```
-#### Для Linux
-```
-git clone https://github.com/stepkacorporation/django-tree-menu.git
-cd django-tree-menu
-python3 -m venv venv
-source venv/bin/activate
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-cd app
-python manage.py migrate
 ```
 
-### Использование
+2. Запустите проект в контейнере Docker:
+
+```bash
+docker-compose up -d --build
+```
+
+3. Загрузите тестовые данные (если необходимо):
+
+```bash
+docker-compose exec web python manage.py loaddata initial_data.json
+```
+
+4. Создайте суперпользователя:
+
+```bash
+docker-compose exec web python manage.py createsuperuser
+```
+
+## Использование
+
 Меню можно отрисовать с помощью следующих шаблонных тегов:
+
 ```
 {% load menu_tags %}
 {% draw_menu 'main_menu' %}
 ```
 
-### Загрузка тестовых данных
-Если вам нужны тестовые данные, вы можете загрузить их с помощью команды:
+## Просмотр примера работы меню
 
-#### Для Windows
-```
-python manage.py loaddata initial_data.json
-```
-#### Для Linux
-```
-python3 manage.py loaddata initial_data.json
-```
-
-### Создание суперпользователя и запуск сервера
-#### Для Windows
-```
-python manage.py createsuperuser
-python manage.py runserver
-```
-#### Для Linux
-```
-python3 manage.py createsuperuser
-python3 manage.py runserver
-```
+Если вы загрузили тестовые данные, пример работы меню можно просмотреть по следующему адресу: http://localhost:8000.  
+Админ-панель: http://localhost:8000/admin.
