@@ -9,7 +9,7 @@
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/stepkacorporation django-tree-menu.git
+git clone https://github.com/stepkacorporation/django-tree-menu.git
 cd django-tree-menu
 ```
 
